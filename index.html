@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jigsaw Game</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+<h1>Jigsaw Matching Game</h1>
+
+<div id="loginDiv">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login / Sign Up</button>
+</div>
+
+<div id="gameDiv" style="display:none;">
+  <p id="welcome"></p>
+  <div id="gameBoard"></div>
+  <p>Score: <span id="score">0</span></p>
+  <h2>Leaderboard</h2>
+  <ul id="leaderboard"></ul>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
