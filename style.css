@@ -1,0 +1,3 @@
+body { font-family: Arial, sans-serif; text-align:center; background:#f0f0f0; }
+#gameBoard { display:flex; flex-wrap:wrap; justify-content:center; max-width:400px; margin:auto; }
+.tile { width:80px; height:80px; margin:5px; background:#fff; border:1px solid #000; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:24px; }
